@@ -1,0 +1,91 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    color: #242635;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+/* ==== HEADER ==== */
+.header {
+    padding: 25px 0;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    color: #242635;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+}
+.nav-links a {
+    font-family: "Source Sans 3", sans-serif;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22.4px;
+    color: #242635;
+}
+/* ==== HAMBURGER MENU ==== */
+.topnav {
+    background-color: #deb887;
+    overflow: hidden;
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a.active {
+    background-color: gray;
+    color: white;
+}
+.topnav .icon {
+    display: none;
+}
+/* ==== MAIN SECTION ==== */
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+.text {
+    max-width: 400px;
+}
+.main-container h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 102px;
+    letter-spacing: -2px;
+    margin-bottom: 20px;
+}
+.main-container p {
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 33px;
+}
+.image-container {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
