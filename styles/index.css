@@ -16,8 +16,9 @@ body {
 }
 .nav-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    gap: 115px;
 }
 .logo {
     font-family: "Source Sans 3", sans-serif;
@@ -43,6 +44,7 @@ body {
 .topnav {
     background-color: #deb887;
     overflow: hidden;
+    display: none;
 }
 .topnav a {
     float: left;
@@ -62,17 +64,21 @@ body {
 }
 /* ==== MAIN SECTION ==== */
 .main-container {
+    max-width: 1200px;
+    margin: auto;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     gap: 80px;
 }
 .text {
     max-width: 400px;
+    margin-top: 100px;
+    flex: 1;
 }
 .main-container h1 {
     font-family: "Poppins", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 90px;
     line-height: 102px;
     letter-spacing: -2px;
@@ -83,9 +89,15 @@ body {
     font-weight: normal;
     font-size: 22px;
     line-height: 33px;
+    margin-top: 46px;
 }
 .image-container {
-    max-width: 100%;
+    flex: 1;
+    align-self: flex-start;
+}
+.image-container img {
+    width: 100%;
     height: auto;
     display: block;
+    margin-top: -55px;
 }
